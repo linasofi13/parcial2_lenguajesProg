@@ -77,10 +77,10 @@ string Dictionary::get(string key) {
     }
 }
 void Dictionary::show() {
-    Dictionary *aux = this->head;
-    while (aux) {
-        aux->show2();
-        aux = aux->next;
+    Dictionary *temp = this->head;
+    while (temp) {
+        temp->show2();
+        temp = temp->next;
     }
 }
 void Dictionary::show2(){
